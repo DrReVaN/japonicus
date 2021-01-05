@@ -26,7 +26,7 @@ log.setLevel(logging.ERROR)
 def build_server(webpageTitle):
     # Setup the app
     server = flask.Flask(__name__)
-    app = dash.Dash(__name__, server=server, csrf_protect=False)
+    app = dash.Dash(__name__, server=server)
 
     app.scripts.config.serve_locally = False
     app.css.config.serve_locally = False
